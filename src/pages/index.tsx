@@ -1,19 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { GitHubButton } from "../components/GitHubButton";
+import { NavBar } from "../components/NavBar";
 
 const Home: NextPage = () => {
-    return (
-        <>
-            <Head>
-                <title>cnrad's next.js template</title>
-            </Head>
-            <div className="w-full h-[100vh] flex flex-col items-center justify-center text-white text-3xl font-semibold">
-                cnrad&apos;s next.js template
-                <GitHubButton />
-            </div>
-        </>
-    );
+    return <p>hello.</p>;
 };
 
 export default Home;
