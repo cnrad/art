@@ -39,6 +39,7 @@ export const NavBar = () => {
                 />
                 {pages.map(item => (
                     <NavButton
+                        key={item}
                         onClick={(e: MouseEvent<HTMLButtonElement>) => updateSelection(e, item)}
                         active={currentPage === item}
                     >
