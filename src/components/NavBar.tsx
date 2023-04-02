@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import { MouseEvent, useEffect, useRef, useState } from "react";
 import styled from "styled-components";

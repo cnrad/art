@@ -63,12 +63,14 @@ const HopIcon = (props: any) => {
 };
 
 const HopInc = () => (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full ">
         <h1 className="uppercase text-5xl">Hop Inc.</h1>
         <p className="text-lg text-gray-400 mb-12">Branding Assets</p>
-        <Image src={neoHop} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
-        <Image src={macbookWallpaper} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
-        <Image src={hopBanner} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
+        <div className="-ml-24 w-screen">
+            <Image src={neoHop} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
+            <Image src={hopBanner} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
+            <Image src={macbookWallpaper} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
+        </div>
     </div>
 );
 
