@@ -13,15 +13,15 @@ const Home: NextPage = () => {
         <div className="w-full h-auto">
             <h1 className="text-5xl mb-4 font-medium">Client work.</h1>
             <p className="text-gray-400 mb-12 w-1/2">
-                Occasionally, I'll{" "}
+                Occasionally, I&apos;ll{" "}
                 <span
                     onClick={() => router.push("/contact")}
                     className="text-neutral-300 hover:text-white cursor-pointer transition-all"
                 >
                     work with clients
                 </span>{" "}
-                to create immersive and engaging digital art that strengthens their brand's impact or promotes a certain
-                product/service of theirs. Below are examples of previous work I've done for others.{" "}
+                to create immersive and engaging digital art that strengthens their brand&apos;s impact or promotes a
+                certain product/service of theirs. Below are examples of previous work I&apos;ve done for others.
             </p>
             <div className="flex flex-row flex-wrap mb-24">
                 <motion.div
@@ -67,9 +67,21 @@ const HopInc = () => (
         <h1 className="uppercase text-5xl">Hop Inc.</h1>
         <p className="text-lg text-gray-400 mb-12">Branding Assets</p>
         <div className="-ml-24 w-screen">
-            <Image src={neoHop} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
-            <Image src={hopBanner} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
-            <Image src={macbookWallpaper} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
+            <Image
+                src={neoHop}
+                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                alt="A 'neo' inspired wallpaper, created specifically for Hop."
+            />
+            <Image
+                src={hopBanner}
+                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                alt="A banner with the words 'write code, deploy, repeat' on it, with a MacBook showcasing the Hop console on the left."
+            />
+            <Image
+                src={macbookWallpaper}
+                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                alt="A 2021 M1 MacBook Pro with the Hop-based wallpaper, showcasing the Hop console on a Chrome window in the middle."
+            />
         </div>
     </div>
 );
