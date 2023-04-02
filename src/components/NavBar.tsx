@@ -1,24 +1,28 @@
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 import { MouseEvent, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
 export const NavBar = () => {
+    const router = useRouter();
+
     const wrapperRef = useRef<HTMLDivElement>(null);
 
-    const [currentPage, setCurrentPage] = useState("Home");
+    const [currentPage, setCurrentPage] = useState("home");
 
     const [flashlightX, setFlashlightX] = useState(4);
     const [flashlightWidth, setFlashlightWidth] = useState(70);
 
     const updateSelection = (e: MouseEvent<HTMLButtonElement>, page: string) => {
         setCurrentPage(page);
+        router.push(`/${page === "home" ? "" : page}`);
 
         const parentBounds = wrapperRef.current?.getBoundingClientRect();
         setFlashlightX(e.currentTarget.getBoundingClientRect().x - (parentBounds?.x ?? 0));
         setFlashlightWidth(e.currentTarget.getBoundingClientRect().width);
     };
 
-    const pages = ["Home", "Works", "Collections", "Other"];
+    const pages = ["home", "works", "clients", "contact"];
 
     return (
         <Container
@@ -59,6 +63,7 @@ const Container = styled(motion.div)<{ position: number }>`
     border-radius: 10rem;
     border: 1px solid hsl(0 0% 20.5%);
     box-shadow: 0 4px 20px -10px #000;
+    z-index: 99999;
 
     &::after {
         content: "";
@@ -135,6 +140,7 @@ const Glow = styled(motion.div)`
 `;
 
 const NavButton = styled(motion.button)<{ active: boolean }>`
+    text-transform: capitalize;
     display: flex;
     align-items: center;
     justify-content: center;
