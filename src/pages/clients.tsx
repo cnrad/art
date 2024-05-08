@@ -10,32 +10,33 @@ const Home: NextPage = () => {
     const router = useRouter();
 
     return (
-        <div className="w-full h-auto">
-            <h1 className="text-5xl mb-4 font-medium">Client work.</h1>
-            <p className="text-gray-400 mb-12 w-1/2">
-                Occasionally, I&apos;ll{" "}
-                <span
-                    onClick={() => router.push("/contact")}
-                    className="text-neutral-300 hover:text-white cursor-pointer transition-all"
-                >
-                    work with clients
-                </span>{" "}
-                to create immersive and engaging digital art that strengthens their brand&apos;s impact or promotes a
-                certain product/service of theirs. Below are examples of previous work I&apos;ve done for others.
-            </p>
-            <div className="flex flex-row flex-wrap mb-24">
-                <motion.div
-                    className="w-32 h-32 relative cursor-pointer"
-                    style={{ backgroundImage: `url('/clients/hop/neo_hop_icon.png')`, backgroundSize: "cover" }}
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
-                >
-                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-black opacity-50 hover:opacity-25 transition-opacity" />
-                    <HopIcon className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 pointer-events-none" />
-                </motion.div>
-            </div>
-            <HopInc />
-        </div>
+        <div>nuthin</div>
+        // <div className="w-full h-auto">
+        //     <h1 className="text-5xl mb-4 font-medium">Client work.</h1>
+        //     <p className="text-gray-400 mb-12 w-1/2">
+        //         Occasionally, I&apos;ll{" "}
+        //         <span
+        //             onClick={() => router.push("/contact")}
+        //             className="text-neutral-300 hover:text-white cursor-pointer transition-all"
+        //         >
+        //             work with clients
+        //         </span>{" "}
+        //         to create immersive and engaging digital art that strengthens their brand&apos;s impact or promotes a
+        //         certain product/service of theirs. Below are examples of previous work I&apos;ve done for others.
+        //     </p>
+        //     <div className="flex flex-row flex-wrap mb-24">
+        //         <motion.div
+        //             className="w-32 h-32 relative cursor-pointer"
+        //             style={{ backgroundImage: `url('/clients/hop/neo_hop_icon.png')`, backgroundSize: "cover" }}
+        //             whileHover={{ scale: 1.05 }}
+        //             transition={{ duration: 0.5, ease: "easeOut" }}
+        //         >
+        //             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-black opacity-50 hover:opacity-25 transition-opacity" />
+        //             <HopIcon className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 pointer-events-none" />
+        //         </motion.div>
+        //     </div>
+        //     <HopInc />
+        // </div>
     );
 };
 

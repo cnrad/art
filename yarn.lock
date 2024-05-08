@@ -135,6 +135,11 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
+"@c-side/react@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@c-side/react/-/react-1.0.2.tgz#a6eb304b29452eef2e139cded94fee0e6fa6db7e"
+  integrity sha512-2gaM126YZsD1w/PyqgRSDjdc2dYSDs2Q6iL0K9LMhlVxq+LwVUTfIYzpJ14jGeNwWU59IIVYYxFLQlegadQFbQ==
+
 "@emotion/is-prop-valid@^0.8.2":
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"

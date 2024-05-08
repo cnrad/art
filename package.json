@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@c-side/react": "^1.0.2",
     "framer-motion": "^6.3.3",
     "next": "12.1.6",
     "prettier": "^2.4.1",
